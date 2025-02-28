@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Converter</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>All-in-One Converter</h1>
+
+        <!-- Conversion Type Selection -->
+        <div class="converter">
+            <label for="conversionType">Choose Conversion Type:</label>
+            <select id="conversionType">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="currency">Currency (Premium Only)</option>
+            </select>
+        </div>
+
+        <!-- Value Input -->
+        <div class="value-input">
+            <label for="enter value">Enter Value:</label>
+            <input style="border: 2px solid skyblue;" type="number" id="value" placeholder="Enter value" />
+        </div>
+
+        <!-- Units Selection -->
+        <div class="units">
+            <label for="fromUnit">From:</label>
+            <select  id="fromUnit"></select>
+
+            <label for="toUnit">To:</label>
+            <select id="toUnit"></select>
+        </div>
+
+        <!-- Convert Button -->
+        <button id="convert">Convert</button>
+
+        <!-- Result -->
+        <p id="result"></p>
+
+        <!-- Premium Access Message -->
+        <div id="premiumMessage" class="hidden">
+            <p>Currency converter is available for premium users only. <a href="">Upgrade now</a>.</p>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
